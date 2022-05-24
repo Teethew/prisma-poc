@@ -6,7 +6,9 @@
   "author": "Teethew <thiagjack@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start:dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node build/index.js"
   },
   "devDependencies": {
     "@types/node": "^17.0.34",
